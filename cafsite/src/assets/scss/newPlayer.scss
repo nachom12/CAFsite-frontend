@@ -1,0 +1,42 @@
+$CAF_PINK: #fbbfbe;
+
+.newPlayerForm {
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+  background-color: $CAF_PINK;
+  color: white;
+  height: 100%;
+  .newPlayerForm__fields{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-radius: 1rem;
+    margin-left: 10%;
+    margin-right: 10%;
+  };
+  label {
+    display: flex;
+    flex-direction: column;
+    color: black;
+    align-items: flex-start;
+    padding-top: 4%;
+    span {
+      color: $CAF_PINK;
+    }
+  };
+  input {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+  };
+  .submitButton{
+    margin: 8%;
+    width: 70%;
+    background-color: $CAF_PINK;
+    color: white;
+    border-radius: 1rem;
+  } 
+}
