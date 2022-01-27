@@ -3,10 +3,10 @@ $CAF_PINK: #fbbfbe;
 .newPlayerForm {
   display: flex;
   flex-direction: column;
-  padding: 2%;
+  padding: 20px;
   background-color: $CAF_PINK;
   color: white;
-  height: 100%;
+  min-height: 100%;
   .newPlayerForm__fields{
     display: flex;
     flex-direction: column;

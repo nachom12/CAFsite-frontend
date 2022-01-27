@@ -1,0 +1,35 @@
+$CAF_PINK: #fbbfbe;
+
+.header--title{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color: black;
+  color: $CAF_PINK;
+  padding: 1px;
+}
+
+.header--title__logo {
+  padding-left: 10px;
+}
+
+.header--title__options {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding-bottom: 1px;
+  margin-bottom: 1px;
+  span {
+    color: $CAF_PINK;
+    margin: 10px;
+    &:hover {
+      background-color: grey;
+    }
+  }
+  a:-webkit-any-link {
+    text-decoration: none;
+  }
+
+}
+

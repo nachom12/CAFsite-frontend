@@ -1,4 +1,4 @@
-import '../assets/scss/newPlayer.scss';
+import '../assets/scss/pages/newPlayer.scss';
 import { useForm } from 'react-hook-form';
 import { ErrorMessage } from '@hookform/error-message';
 
@@ -16,6 +16,10 @@ const NewPlayer = () => {
       position: "",
     }
   });
+
+  if(errors) {
+    console.log(errors);
+  }
 
   const onSubmit = (playerData) => {
     alert(JSON.stringify(playerData));
@@ -38,22 +42,16 @@ const NewPlayer = () => {
         <label>
           Age
           <input type="number" {...register("age", { required: "Insert valid number", min: 18, max: 35 })} />
+          <span>{errors.age?.message}</span>
         </label>
         <label>
           Position
           <input {...register("position")} />
           <span>{errors.position?.message}</span>
         </label>
-        <ErrorMessage errors={errors} name="singleErrorInput" />
-
-        <ErrorMessage
-          errors={errors}
-          name="singleErrorInput"
-          render={({ message }) => <p>{message}</p>}
-        />
         <label>
           Playing Since
-          <input {...register("playingSince")} />
+          <input type="number" {...register("playingSince")} />
         </label>
         <input className="submitButton" type="submit"></input>
       </form>
