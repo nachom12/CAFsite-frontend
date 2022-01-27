@@ -1,12 +1,14 @@
 $CAF_PINK: #fbbfbe;
+$breakpoint-tablet: 768px;
+
 
 .newPlayerForm {
   display: flex;
   flex-direction: column;
-  padding: 20px;
   background-color: $CAF_PINK;
   color: white;
-  min-height: 100%;
+  height: 100%;
+  width: 100%;
   .newPlayerForm__fields{
     display: flex;
     flex-direction: column;

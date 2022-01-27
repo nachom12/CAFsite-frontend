@@ -1,18 +1,16 @@
 .App {
   display: flex;
   flex-direction: column;
-  height: 100vh;
-}
-
-.header {
-  margin-bottom: auto;
+  min-height: 100vh;
 }
 
 .content {
-  height: 100%;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
 }
 
 .footer {
-  margin-top: auto;
+  min-height: 2px;
 }
 
