@@ -3,7 +3,7 @@ $CAF_PINK: #fbbfbe;
 .header--title{
   display: flex;
   flex-direction: row;
-  align-items: center;
+  // align-items: center;
   justify-content: space-around;
   background-color: black;
   color: $CAF_PINK;
@@ -11,7 +11,10 @@ $CAF_PINK: #fbbfbe;
 }
 
 .header--title__logo {
-  padding-left: 10px;
+  img {
+    height: 50px;
+    margin-left: 10px;
+  }
 }
 
 .header--title__options {
@@ -20,16 +23,18 @@ $CAF_PINK: #fbbfbe;
   justify-content: center;
   padding-bottom: 1px;
   margin-bottom: 1px;
-  span {
-    color: $CAF_PINK;
-    margin: 10px;
+  button{
+    color: gray;
+    height: 100%;
+    border: none;
+    background-color: transparent;
+    font-size: 15px;
+    margin: 4px;
+    transition: 0.1s;
     &:hover {
-      background-color: grey;
+      opacity: 1;
+      color: $CAF_PINK;
     }
   }
-  a:-webkit-any-link {
-    text-decoration: none;
-  }
-
 }
 
