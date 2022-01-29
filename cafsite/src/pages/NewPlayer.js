@@ -17,7 +17,7 @@ const NewPlayer = () => {
     }
   });
 
-  if(errors) {
+  if (errors) {
     console.log(errors);
   }
 
@@ -28,6 +28,7 @@ const NewPlayer = () => {
   return (
     <div className="newPlayerForm">
       <h1>Add a new player</h1>
+
       <form className="newPlayerForm__fields" onSubmit={handleSubmit(onSubmit)}>
         <label>
           First Name:

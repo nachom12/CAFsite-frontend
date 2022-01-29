@@ -17,6 +17,7 @@ function App() {
       <div className="content">
         <Routes>
           <Route path="/" element={<Welcome />} />
+          <Route path="/welcome" element={<Welcome />} />
           <Route path="/newplayer" element={<NewPlayer />} />
           <Route path="/*" element={<ErrorPage errorCode="404" />} />
         </Routes>

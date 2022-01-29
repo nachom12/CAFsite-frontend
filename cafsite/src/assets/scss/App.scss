@@ -8,9 +8,17 @@
   display: flex;
   justify-content: center;
   height: 100vh;
+  // min-height: calc(100vh - 150px);
 }
 
 .footer {
-  min-height: 2px;
+  // ToDoL Parche de bottom bar.
+  // position: sticky;
+  // bottom: 0;
+  // min-height: 2px;
+
+  // flex
+  // flex-wrap: wrap
+  
 }
 
