@@ -5,27 +5,11 @@ import CAF from '../assets/img/CAF.png'
 import { Link, useLocation } from 'react-router-dom';
 
 
-const Header = () => {
-  const menuTabs = [
-    {
-      key: 'welcome',
-      value: 'Welcome'
-    },
-    {
-      key: 'players',
-      value: 'Players'
-    },
-    {
-      key: 'newplayer',
-      value: 'New Player'
-    }
-  ];
+const Header = ({ menuTabs }) => {
 
   let { pathname } = useLocation();
 
-  console.log(pathname.slice(1, pathname.length)); // erase first character '/'.
-
-  const [currentTab, setCurrentTab] = useState(pathname.slice(1, pathname.length));
+  const [currentTab, setCurrentTab] = useState(pathname.slice(1, pathname.length)); // set the current tab with the url.
 
   const renderMenuTab = (tabName) => {
     return (

@@ -9,10 +9,26 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 
 function App() {
+
+  const menuTabs = [
+    {
+      key: 'welcome',
+      value: 'Welcome'
+    },
+    {
+      key: 'players',
+      value: 'Players'
+    },
+    {
+      key: 'newplayer',
+      value: 'New Player'
+    }
+  ];
+
   return (
     <div className="App">
       <div className="header">
-        <Header />
+        <Header menuTabs={menuTabs}/>
       </div>
       <div className="content">
         <Routes>
