@@ -23,9 +23,11 @@ const Header = ({ menuTabs }) => {
 
   return (
     <div className="header--title">
-      <div className="header--title__logo">
-        <img src={CAF} alt="caf logo" />
-      </div>
+      <Link to='/'>
+        <div className="header--title__logo">
+          <img src={CAF} alt="caf logo" onClick={() => setCurrentTab('welcome')} />
+        </div>
+      </Link>
       <div className="header--title__options">
         {menuTabs.map((menuTab) => {
           return (

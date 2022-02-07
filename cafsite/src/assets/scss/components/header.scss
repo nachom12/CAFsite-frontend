@@ -3,7 +3,6 @@ $CAF_PINK: #fbbfbe;
 .header--title{
   display: flex;
   flex-direction: row;
-  // align-items: center;
   justify-content: space-around;
   background-color: black;
   color: $CAF_PINK;
@@ -14,6 +13,7 @@ $CAF_PINK: #fbbfbe;
   img {
     height: 50px;
     margin-left: 10px;
+    margin-top: 10px;
   }
 }
 
