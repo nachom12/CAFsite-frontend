@@ -12,6 +12,7 @@ $CAF_PINK: #fbbfbe;
   border-top: none;
   @media (min-width: 500px) {
     height: 200px;
+    width: 180px;
     padding: 20px;
     margin: 20px;
     flex-direction: column;
@@ -34,6 +35,9 @@ $CAF_PINK: #fbbfbe;
     height: 100%;
     width: 100%;
     align-items: center;
+    @media (min-width: 500px) {
+      margin-top: 50px;
+    }
     
     .player_chart_data__conteiner--secondary_data {
       display: flex;

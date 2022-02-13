@@ -1,7 +1,7 @@
-import '../assets/scss/components/playerChart.scss';
+import '../assets/scss/components/playerCard.scss';
 import CAF from '../assets/img/CAF.png';
 
-const PlayerChart = (props) => {
+const PlayerCard = (props) => {
   return (
     <div className="player_chart">
     <div className="player_chart--photo">
@@ -27,4 +27,4 @@ const PlayerChart = (props) => {
   );
 }
 
-export default PlayerChart;
+export default PlayerCard;
