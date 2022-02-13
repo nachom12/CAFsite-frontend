@@ -4,6 +4,7 @@ import { Route, Routes } from 'react-router-dom';
 
 import Welcome from './pages/Welcome';
 import NewPlayer from './pages/NewPlayer';
+import Players from './pages/Players';
 import ErrorPage from './pages/error';
 import Header from './components/Header'
 import Footer from './components/Footer'
@@ -35,6 +36,7 @@ function App() {
           <Route path="/" element={<Welcome />} />
           <Route path="/welcome" element={<Welcome />} />
           <Route path="/newplayer" element={<NewPlayer />} />
+          <Route path="/players" element={<Players />} />
           <Route path="/*" element={<ErrorPage errorCode="404" />} />
         </Routes>
       </div>

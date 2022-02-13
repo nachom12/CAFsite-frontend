@@ -1,0 +1,17 @@
+$CAF_PINK: #fbbfbe;
+
+.players_page {
+  display: flex;
+  flex-direction: column;
+}
+.players_page_list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  @media (min-width: 500px) {
+    flex-direction: row;
+    margin-bottom: 10px;
+  }
+}
