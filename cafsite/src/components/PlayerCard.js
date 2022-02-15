@@ -1,11 +1,11 @@
 import '../assets/scss/components/playerCard.scss';
-import CAF from '../assets/img/CAF.png';
+import player from '../assets/img/player.JPG';
 
 const PlayerCard = (props) => {
   return (
     <div className="player_chart">
     <div className="player_chart--photo">
-      <img src={CAF} alt="caf logo" />
+      <img src={player} alt="caf logo" />
     </div>
     <div className="player_chart_data__conteiner">
       <div className="player_chart_data__conteiner--secondary_data">
