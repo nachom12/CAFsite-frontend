@@ -2,7 +2,7 @@ $CAF_PINK: #fbbfbe;
 $CAF_OPACITY: rgba(251, 191, 190, 0.3);
 
 .player_chart {
-  width: 300px;
+  width: 80%;
   height: 100px;
   margin-bottom: 30px;
   display: flex;
@@ -27,7 +27,6 @@ $CAF_OPACITY: rgba(251, 191, 190, 0.3);
     display: flex;
     height: 100%;
     align-items: center;
-    width: 100%;
     img {
       height: 100px;
       border-radius: 1rem 0rem 0rem 0rem;

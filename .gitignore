@@ -1,0 +1,4 @@
+cafsite/.env
+cafsite/public/env.js
+cafsite/src/api/mocks/playersMock.js
+cafsite/src/assets/img/player.JPG
