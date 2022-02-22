@@ -11,6 +11,7 @@ const Players = () => {
     async function getPlayers() {
       let apiHandler = new ApiHandler();
       const playersRes = await apiHandler.getPlayers();
+      console.log(playersRes);
       setPlayers(playersRes);
     }
     getPlayers();
@@ -25,7 +26,7 @@ const Players = () => {
         {
           players.map( (player) => {
             return (
-              <PlayerCard firstName={player.firstName}  lastName={player.lastName} number={player.number} position={player.position} city={player.city} />
+              <PlayerCard firstName={player.firstName}  lastName={player.lastName} number={player.number} position={player.position} city={player.placeOfBirth} image={player.image} />
             )    
           })
         }
