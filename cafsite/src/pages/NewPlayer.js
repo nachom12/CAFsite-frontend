@@ -27,7 +27,9 @@ const NewPlayer = () => {
 
   return (
     <div className="newPlayerForm">
-      <h1>Add a new player</h1>
+      <div className="newPlayerForm--title">
+        <h1>Add a new player</h1>
+      </div>
 
       <form className="newPlayerForm__fields" onSubmit={handleSubmit(onSubmit)}>
         <label>

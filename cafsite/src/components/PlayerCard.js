@@ -1,5 +1,4 @@
 import '../assets/scss/components/playerCard.scss';
-import CAF from '../assets/img/CAF.png';
 
 const PlayerCard = ({
   image,

@@ -1,33 +1,37 @@
 $CAF_PINK: #fbbfbe;
+$CAF_OPACITY: rgba(251, 191, 190, 0.3);
+$BLACK_OPACITY: rgba(0,0,0,0.5);
 
 .newPlayerForm {
   display: flex;
   flex-direction: column;
-  background-color: $CAF_PINK;
-  color: white;
-  min-height: 75vh;
-  max-height: 100%;
   padding: 20px;
   width: 100%;
-  @media (max-height: 500px) {
-    height: 130vh;
-  }
+  height: 100%;
+  justify-content: space-between;
 
   .newPlayerForm__fields {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background-color: white;
-    border-radius: 1rem;
-    margin-left: 10%;
-    margin-right: 10%;
+    background-color: $CAF_OPACITY;
+    border-radius: 4rem;
+    border: 3px solid $CAF_PINK;
+    margin: {
+      top: 10%;
+      left: 10%;
+      right: 10%;
+    }
     padding: 25px;
     justify-content: center;
-
     @media (min-width: 600px) {
       flex-direction: row;
       flex-wrap: wrap;
+      margin: {
+        top: 5%;
+        bottom: 5%;
+      }
     }
   }
 
@@ -43,18 +47,33 @@ $CAF_PINK: #fbbfbe;
     margin: 5px;
   };
   input {
+    border: 2px solid $CAF_PINK;
     outline: none;
     border: {
       top: none;
       left: none;
       right: none;
     }
+    @media (min-width: 600px) {
+      font-size: 18px;
+    }
   };
   .submitButton{
     margin: 8%;
-    width: 70%;
-    background-color: $CAF_PINK;
+    padding: 4%;
+    width: 80%;
+    background-color: black;
     color: white;
     border-radius: 1rem;
+    border: {
+      top: none;
+      left: none;
+      right: none;
+    }
+    @media (min-width: 600px) {
+      padding: 1%;
+      width: 70%;
+    }
+
   } 
 }
