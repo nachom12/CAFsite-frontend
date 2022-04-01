@@ -21,9 +21,9 @@ function App() {
       value: 'Players'
     },
     {
-      key: 'newplayer',
-      value: 'New Player'
-    }
+      key: 'store',
+      value: 'Store'
+    },
   ];
 
   return (

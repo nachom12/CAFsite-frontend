@@ -37,3 +37,31 @@ $CAF_PINK: #fbbfbe;
     }
   }
 }
+
+.header--title__admin {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+  opacity: 0.5;
+  color: $CAF_PINK;
+  justify-content: center;
+  align-items: center;
+  button{
+    color: gray;
+    border: none;
+    background-color: transparent;
+    font-size: 10px;
+    transition: 0.1s;
+  }
+  img {
+    height: 32px;
+    width: 32px;
+    display: flex;
+  }
+  &:hover {
+    opacity: 1;
+    button {
+      color: $CAF_PINK;
+    }
+  }
+}

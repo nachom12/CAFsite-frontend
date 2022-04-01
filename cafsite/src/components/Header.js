@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import '../assets/scss/components/header.scss'
+import icon from '../assets/img/user_icon.png'
 import CAF from '../assets/img/CAF.png'
 
 import { Link, useLocation } from 'react-router-dom';
@@ -40,6 +41,10 @@ const Header = ({ menuTabs }) => {
             </div>
           )
         })}
+      </div>
+      <div className="header--title__admin">
+        <img src={icon} alt="admin icon"/>
+        <button>Log in</button>
       </div>
     </div>
   )
