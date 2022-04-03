@@ -15,9 +15,9 @@ const Header = ({ menuTabs }) => {
   const renderMenuTab = (tabName) => {
     return (
       <>
-        {tabName.key === currentTab ? <hr /> : ''}
-        {tabName.value}
-        {tabName.key === currentTab ? <hr /> : ''}
+        <div className= {tabName.key === currentTab ? 'header--title__options__active' : 'header--title__options__not-active'}>
+          {tabName.value}
+        </div>
       </>
     )
   };

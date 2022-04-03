@@ -1,6 +1,6 @@
 import './App.css';
 import './assets/scss/App.scss'
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, Navigate } from 'react-router-dom';
 
 import Welcome from './pages/Welcome';
 import NewPlayer from './pages/NewPlayer';
@@ -29,11 +29,11 @@ function App() {
   return (
     <div className="App">
       <div className="header">
-        <Header menuTabs={menuTabs}/>
+        <Header menuTabs={menuTabs} />
       </div>
       <div className="content">
         <Routes>
-          <Route path="/" element={<Welcome />} />
+          <Route path="/" element={<Navigate replace to="/welcome" />} />
           <Route path="/welcome" element={<Welcome />} />
           <Route path="/newplayer" element={<NewPlayer />} />
           <Route path="/players" element={<Players />} />
