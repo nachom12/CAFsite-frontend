@@ -35,15 +35,18 @@ $CAF_PINK: #fbbfbe;
       font-size: 16px;
     }
     .header--title__options__not-active {
-      color: gray;
+      color: $CAF_PINK;
+      opacity: 0.5;
+      &:hover {
+        opacity: 1;
+        color: $CAF_PINK;
+      }
     }
     background-color: transparent;
     font-size: 15px;
     margin: 4px;
     transition: 0.1s;
-    &:hover {
-      opacity: 1;
-      color: $CAF_PINK;
+    &:hover {     
       cursor: pointer;
     }
   }
