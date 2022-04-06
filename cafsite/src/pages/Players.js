@@ -40,7 +40,7 @@ const Players = () => {
               {
                 goalkeepers.map((player) => {
                   return (
-                    <PlayerCard firstName={player.firstName} lastName={player.lastName} number={player.number} position={player.position} city={player.placeOfBirth} image={player.image} />
+                    <PlayerCard key={player.key} firstName={player.firstName} lastName={player.lastName} number={player.number} position={player.position} city={player.placeOfBirth} image={player.image} playingSince={player.playingSince} />
                   )
                 })
               }
@@ -54,7 +54,7 @@ const Players = () => {
               {
                 defenders.map((player) => {
                   return (
-                    <PlayerCard firstName={player.firstName} lastName={player.lastName} number={player.number} position={player.position} city={player.placeOfBirth} image={player.image} />
+                    <PlayerCard key={player.key} firstName={player.firstName} lastName={player.lastName} number={player.number} position={player.position} city={player.placeOfBirth} image={player.image} playingSince={player.playingSince} />
                   )
                 })
               }
@@ -68,9 +68,7 @@ const Players = () => {
             {
               midfielders.map((player) => {
                 return (
-                  <div className="players_by_position">
-                    <PlayerCard firstName={player.firstName} lastName={player.lastName} number={player.number} position={player.position} city={player.placeOfBirth} image={player.image} />
-                  </div>
+                    <PlayerCard key={player.id} firstName={player.firstName} lastName={player.lastName} number={player.number} position={player.position} city={player.placeOfBirth} image={player.image} playingSince={player.playingSince}/>
                 )
               })
             }
@@ -84,9 +82,7 @@ const Players = () => {
               {
                 forwards.map((player) => {
                   return (
-                    <div className="players_by_position">
-                      <PlayerCard firstName={player.firstName} lastName={player.lastName} number={player.number} position={player.position} city={player.placeOfBirth} image={player.image} />
-                    </div>
+                      <PlayerCard key={player.key} firstName={player.firstName} lastName={player.lastName} number={player.number} position={player.position} city={player.placeOfBirth} image={player.image} playingSince={player.playingSince} />
                   )
                 })
               }

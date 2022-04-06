@@ -10,7 +10,7 @@ const Header = ({ menuTabs }) => {
 
   let { pathname } = useLocation();
 
-  const [currentTab, setCurrentTab] = useState(pathname.slice(1, pathname.length)); // set the current tab with the url.
+  const [currentTab, setCurrentTab] = useState(pathname.slice(1, pathname.length) || 'welcome'); // set the current tab with the url.
 
   const renderMenuTab = (tabName) => {
     return (
@@ -32,7 +32,7 @@ const Header = ({ menuTabs }) => {
       <div className="header--title__options">
         {menuTabs.map((menuTab) => {
           return (
-            <div id={menuTab.key}>
+            <div key={menuTab.key}>
               <Link to={'/' + menuTab.key}>
                 <button onClick={() => setCurrentTab(menuTab.key)} >
                   {renderMenuTab(menuTab)}

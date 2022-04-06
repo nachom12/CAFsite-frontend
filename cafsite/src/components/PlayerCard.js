@@ -7,10 +7,11 @@ const PlayerCard = ({
   firstName,
   lastName,
   position,
+  playingSince,
 }) => {
-  if (image == null){
+  if (image == null) {
     image = 'https://interfacultades-app.s3.us-east-2.amazonaws.com/teams/CAF.png';
-  } 
+  }
 
   return (
     <div className="player_chart">
@@ -36,15 +37,11 @@ const PlayerCard = ({
       <div className="player_chart_data__hidden">
         <div className="player_chart_data__hidden--playing_since">
           <span>Playing since</span>
-          <span><b>2018</b></span>
+          <span><b>{playingSince}</b></span>
         </div>
-        <div className="player_chart_data__hidden--entrance">
-          <span>Gen</span>
-          <span><b>2017</b></span>
-        </div>
-        <div className="player_chart_data__hidden--carreer">
-          <span>Ing.</span>
-          <span><b>Comp</b></span>
+        <div className="player_chart_data__hidden--aka">
+          <span>AKA</span>
+          <span><b>aka</b></span>
         </div>
       </div>
     </div>
