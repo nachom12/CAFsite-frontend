@@ -7,8 +7,13 @@ class ApiHandler {
   };
 
   async getPlayers() {
-    let res = await axios.get(`${config.api_url}/players`);
-    return res.data;
+    let { data } = await axios.get(`${config.api_url}/players`);
+    return data;
+  }
+
+  async getStore() {
+    let { data } = await axios.get(`${config.api_url}/store`);
+    return data;
   }
 
 }
