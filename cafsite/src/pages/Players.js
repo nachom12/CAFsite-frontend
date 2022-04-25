@@ -40,7 +40,7 @@ const Players = () => {
               {
                 goalkeepers.map((player) => {
                   return (
-                    <PlayerCard key={player.key} firstName={player.firstName} lastName={player.lastName} number={player.number} position={player.position} city={player.placeOfBirth} image={player.image} playingSince={player.playingSince} />
+                    <PlayerCard key={player.key} playerData={player}/>
                   )
                 })
               }
@@ -54,7 +54,7 @@ const Players = () => {
               {
                 defenders.map((player) => {
                   return (
-                    <PlayerCard key={player.key} firstName={player.firstName} lastName={player.lastName} number={player.number} position={player.position} city={player.placeOfBirth} image={player.image} playingSince={player.playingSince} />
+                    <PlayerCard key={player.key} playerData={player}/>
                   )
                 })
               }
@@ -65,13 +65,13 @@ const Players = () => {
               <h2>Midfielders</h2>
             </div>
             <div className="players_by_position--players">
-            {
-              midfielders.map((player) => {
-                return (
-                    <PlayerCard key={player.id} firstName={player.firstName} lastName={player.lastName} number={player.number} position={player.position} city={player.placeOfBirth} image={player.image} playingSince={player.playingSince}/>
-                )
-              })
-            }
+              {
+                midfielders.map((player) => {
+                  return (
+                      <PlayerCard key={player.id} playerData={player}/>
+                  )
+                })
+              }
             </div>
           </div>
           <div className="players_by_position">
@@ -82,7 +82,7 @@ const Players = () => {
               {
                 forwards.map((player) => {
                   return (
-                      <PlayerCard key={player.key} firstName={player.firstName} lastName={player.lastName} number={player.number} position={player.position} city={player.placeOfBirth} image={player.image} playingSince={player.playingSince} />
+                      <PlayerCard key={player.key} playerData={player}/>
                   )
                 })
               }
